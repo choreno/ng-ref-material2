@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+    All about Angular Material2
+
+</md-toolbar>
+<br>
+<div class="flex-container" fxLayout="row" fxLayoutAlign="space-around center">
+
+    <div class="flex-item">
+        <button  routerLink="/button" md-raised-button color="accent">Button</button>
+    </div>
+    <div class="flex-item">
+        <button md-raised-button color="accent">Button2</button>
+    </div>
+    <div class="flex-item">
+        <button md-raised-button color="accent">Button3</button>
+    </div>
+</div>
+<hr>
+
+
+<router-outlet></router-outlet>

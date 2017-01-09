@@ -9,17 +9,31 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+//routing
+import { AppRoutingModule } from './router/app.routing.module';
 
+
+//components
 import { AppComponent } from './app.component';
+import { ButtonComponent } from './button/button.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ButtonComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule.forRoot(),
+    FlexLayoutModule.forRoot(),
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
